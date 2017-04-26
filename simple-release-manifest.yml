@@ -1,0 +1,32 @@
+name: simple-release
+director_uuid: f920b5cf-38b7-4008-8ef5-568601d3a396
+
+releases:
+  - {name: simple-release, version: latest}
+
+stemcells:
+  - alias: default
+    os: ubuntu-trusty
+    version: latest
+
+instance_groups:
+  - name: simple_node
+    instances: 1
+    azs: [us-central1-a]
+    jobs:
+    - name: simple-service
+      release: simple-release
+    vm_type: large.cpu
+    cloud_properties:
+      tags:
+      - allow-ssh
+    stemcell: default
+    persistent_disk_type: '307200'
+    networks:
+      - name: services-1
+
+update:
+  canaries: 1
+  max_in_flight: 10
+  canary_watch_time: 1000-30000
+  update_watch_time: 1000-30000

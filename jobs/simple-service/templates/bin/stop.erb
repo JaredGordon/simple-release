@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# If a command fails, exit immediately
+
+set -e -x
+
+PIDFILE=/var/vcap/sys/run/simple-service.pid
+
+kill -9 `cat ${PIDFILE}`
+
+exit 0

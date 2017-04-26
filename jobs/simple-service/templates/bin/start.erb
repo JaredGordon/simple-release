@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# If a command fails, exit immediately
+set -e -x
+
+PIDFILE=/var/vcap/sys/run/simple-service.pid
+JARFILE=/var/vcap/jobs/simple-service/packages/simple-service/simple-service.jar
+JAVA_HOME=/var/vcap/packages/jdk
+
+export PATH=$JAVA_HOME/bin:$PATH
+
+java -jar ${JARFILE} &
+echo $! > ${PIDFILE}
+
+exit 0

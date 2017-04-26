@@ -1,0 +1,9 @@
+---
+name: simple-service
+templates:
+  bin/start.erb: bin/start
+  bin/stop.erb: bin/stop
+
+packages:
+- jdk
+- simple-service

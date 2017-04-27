@@ -7,6 +7,8 @@ PIDFILE=/var/vcap/sys/run/simple-service.pid
 JARFILE=/var/vcap/jobs/simple-service/packages/simple-service/simple-service.jar
 JAVA_HOME=/var/vcap/packages/jdk
 
+export API_KEY=<%= link('simple-service').p('api-key') %>
+
 export PATH=$JAVA_HOME/bin:$PATH
 
 java -jar ${JARFILE} &

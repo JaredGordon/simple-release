@@ -7,3 +7,13 @@ templates:
 packages:
 - jdk
 - simple-service
+
+provides:
+- name: simple-service
+  type: simple-service
+  properties:
+  - api-key
+
+consumes:
+- name: simple-service
+  type: simple-service

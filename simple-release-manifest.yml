@@ -16,6 +16,8 @@ instance_groups:
     jobs:
     - name: simple-service
       release: simple-release
+      properties:
+        api-key: <wunderground api key goes here>
     vm_type: large.cpu
     cloud_properties:
       tags:

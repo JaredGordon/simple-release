@@ -4,6 +4,6 @@ jdk/openjdk-1.8.0_91.tar.gz:
   sha: 63ff487f3004729d33796e87919c183fa8a4e752
   size: 45736783
 simple-service/simple-service.jar:
-  object_id: b45bf6e0-d6fd-4993-819b-f8a9843ac250
-  sha: 24e27c091bee1fa2075f5eeccb6446d264e802e4
-  size: 29737972
+  object_id: cc3fafd6-c36d-4cbb-83a7-67b7e78671b1
+  sha: 2480dd77fcc96c36f162741852b293750f6f3bab
+  size: 29738144

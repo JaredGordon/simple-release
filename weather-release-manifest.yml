@@ -1,8 +1,8 @@
-name: simple-release
+name: weather-release
 director_uuid: f920b5cf-38b7-4008-8ef5-568601d3a396
 
 releases:
-  - {name: simple-release, version: latest}
+  - {name: weather-release, version: latest}
 
 stemcells:
   - alias: default
@@ -14,8 +14,8 @@ instance_groups:
     instances: 1
     azs: [us-central1-a]
     jobs:
-    - name: simple-service
-      release: simple-release
+    - name: weather-service
+      release: weather-release
       properties:
         api-key: <wunderground api key goes here>
     vm_type: large.cpu

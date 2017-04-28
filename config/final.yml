@@ -3,4 +3,4 @@ blobstore:
   provider: local
   options:
     blobstore_path: /tmp/blobs
-final_name: simple-release
+final_name: weather-release

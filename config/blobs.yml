@@ -3,7 +3,7 @@ jdk/openjdk-1.8.0_91.tar.gz:
   object_id: 3b2e89ac-14e0-465f-8c86-113276eee1ae
   sha: 63ff487f3004729d33796e87919c183fa8a4e752
   size: 45736783
-simple-service/simple-service.jar:
-  object_id: cc3fafd6-c36d-4cbb-83a7-67b7e78671b1
-  sha: 2480dd77fcc96c36f162741852b293750f6f3bab
-  size: 29738144
+weather-service/weather-service.jar:
+  object_id: ccce4ada-ad10-4367-9858-ce19e9ec8583
+  sha: 6b3b35839fb7e96f9314fc8251f49277a547167d
+  size: 29738107

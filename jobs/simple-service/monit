@@ -1,5 +1,0 @@
-check process simple-service
-  with pidfile /var/vcap/sys/run/simple-service.pid
-  start program "/var/vcap/jobs/simple-service/bin/start" with timeout 60 seconds
-  stop program "/var/vcap/jobs/simple-service/bin/stop"
-  group vcap

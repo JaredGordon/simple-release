@@ -1,0 +1,19 @@
+---
+name: weather-service
+templates:
+  bin/start.erb: bin/start
+  bin/stop.erb: bin/stop
+
+packages:
+- jdk
+- weather-service
+
+provides:
+- name: weather-service
+  type: weather-service
+  properties:
+  - api-key
+
+consumes:
+- name: weather-service
+  type: weather-service

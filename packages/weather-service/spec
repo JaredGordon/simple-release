@@ -1,0 +1,8 @@
+---
+name: weather-service
+
+dependencies:
+- jdk
+
+files:
+- weather-service/weather-service.jar

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# If a command fails, exit immediately
+set -e -x
+
+PIDFILE=/var/vcap/sys/run/weather-service.pid
+JARFILE=/var/vcap/jobs/weather-service/packages/weather-service/weather-service.jar
+JAVA_HOME=/var/vcap/jobs/weather-service/packages/jdk
+
+export API_KEY=<%= link('weather-service').p('api-key') %>
+
+export PATH=$JAVA_HOME/bin:$PATH
+
+java -jar ${JARFILE} &
+echo $! > ${PIDFILE}
+
+exit 0

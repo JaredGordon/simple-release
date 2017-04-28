@@ -1,0 +1,5 @@
+check process weather-service
+  with pidfile /var/vcap/sys/run/weather-service.pid
+  start program "/var/vcap/jobs/weather-service/bin/start" with timeout 60 seconds
+  stop program "/var/vcap/jobs/weather-service/bin/stop"
+  group vcap

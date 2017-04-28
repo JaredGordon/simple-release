@@ -1,8 +1,0 @@
----
-name: simple-service
-
-dependencies:
-- jdk
-
-files:
-- simple-service/simple-service.jar
